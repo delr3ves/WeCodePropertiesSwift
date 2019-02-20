@@ -14,9 +14,9 @@ import SwiftCheck
 class WeCodePlaygroundSpec: XCTestCase {
     func testAll() {
         property("True should pass")
-            <- forAll { (a: Int) in
+            <- forAll { (_: Int) in
                 return true
         }
-        
+
     }
 }
