@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2133B27ED3E961F829B3EABE /* Pods_WeCodePropertiesSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4BB46C1F5F4F9E1573AC07 /* Pods_WeCodePropertiesSwift.framework */; };
+		37445755448F1C63E894DC52 /* Pods_WeCodePropertiesSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55967D2AE1A2382197212ADB /* Pods_WeCodePropertiesSwiftTests.framework */; };
 		A792A019221E07E400B61F2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A792A018221E07E400B61F2F /* AppDelegate.swift */; };
 		A792A01B221E07E400B61F2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A792A01A221E07E400B61F2F /* ViewController.swift */; };
 		A792A01E221E07E400B61F2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A792A01C221E07E400B61F2F /* Main.storyboard */; };
 		A792A020221E07E500B61F2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A792A01F221E07E500B61F2F /* Assets.xcassets */; };
 		A792A023221E07E500B61F2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A792A021221E07E500B61F2F /* LaunchScreen.storyboard */; };
-		A792A02E221E07E500B61F2F /* WeCodePropertiesSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A792A02D221E07E500B61F2F /* WeCodePropertiesSwiftTests.swift */; };
+		A792A03B221E0C1D00B61F2F /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A792A03A221E0C1D00B61F2F /* .swiftlint.yml */; };
+		A792A03D221E0C5D00B61F2F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A792A03C221E0C5D00B61F2F /* .gitignore */; };
+		A792A03F221E0C9300B61F2F /* WeCodePlaygroundSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A792A03E221E0C9300B61F2F /* WeCodePlaygroundSpec.swift */; };
+		A792A042221E116E00B61F2F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A792A041221E116E00B61F2F /* README.md */; };
+		A792A044221E122C00B61F2F /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = A792A043221E122C00B61F2F /* .travis.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010C9EC744F90B18886ACFA4 /* Pods-WeCodePropertiesSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeCodePropertiesSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeCodePropertiesSwiftTests/Pods-WeCodePropertiesSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		2A4BB46C1F5F4F9E1573AC07 /* Pods_WeCodePropertiesSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeCodePropertiesSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55967D2AE1A2382197212ADB /* Pods_WeCodePropertiesSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeCodePropertiesSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A792A015221E07E400B61F2F /* WeCodePropertiesSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeCodePropertiesSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A792A018221E07E400B61F2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A792A01A221E07E400B61F2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,8 +43,15 @@
 		A792A022221E07E500B61F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A792A024221E07E500B61F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A792A029221E07E500B61F2F /* WeCodePropertiesSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeCodePropertiesSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A792A02D221E07E500B61F2F /* WeCodePropertiesSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeCodePropertiesSwiftTests.swift; sourceTree = "<group>"; };
 		A792A02F221E07E500B61F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A792A03A221E0C1D00B61F2F /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		A792A03C221E0C5D00B61F2F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A792A03E221E0C9300B61F2F /* WeCodePlaygroundSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeCodePlaygroundSpec.swift; sourceTree = "<group>"; };
+		A792A041221E116E00B61F2F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A792A043221E122C00B61F2F /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		C351F075470A16C62E48FC01 /* Pods-WeCodePropertiesSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeCodePropertiesSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeCodePropertiesSwift/Pods-WeCodePropertiesSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		DB04C5F718A5A99408C7864F /* Pods-WeCodePropertiesSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeCodePropertiesSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeCodePropertiesSwift/Pods-WeCodePropertiesSwift.release.xcconfig"; sourceTree = "<group>"; };
+		F8F8E0CBA2B726C94141CC9C /* Pods-WeCodePropertiesSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeCodePropertiesSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeCodePropertiesSwiftTests/Pods-WeCodePropertiesSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2133B27ED3E961F829B3EABE /* Pods_WeCodePropertiesSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +67,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37445755448F1C63E894DC52 /* Pods_WeCodePropertiesSwiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		274EDFF57C5621DE513D8806 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A4BB46C1F5F4F9E1573AC07 /* Pods_WeCodePropertiesSwift.framework */,
+				55967D2AE1A2382197212ADB /* Pods_WeCodePropertiesSwiftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A792A00C221E07E400B61F2F = {
 			isa = PBXGroup;
 			children = (
+				A792A043221E122C00B61F2F /* .travis.yml */,
+				A792A041221E116E00B61F2F /* README.md */,
+				A792A03C221E0C5D00B61F2F /* .gitignore */,
+				A792A03A221E0C1D00B61F2F /* .swiftlint.yml */,
 				A792A017221E07E400B61F2F /* WeCodePropertiesSwift */,
 				A792A02C221E07E500B61F2F /* WeCodePropertiesSwiftTests */,
 				A792A016221E07E400B61F2F /* Products */,
+				F04C000B85C140B8D7122F5C /* Pods */,
+				274EDFF57C5621DE513D8806 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,10 +123,21 @@
 		A792A02C221E07E500B61F2F /* WeCodePropertiesSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				A792A02D221E07E500B61F2F /* WeCodePropertiesSwiftTests.swift */,
 				A792A02F221E07E500B61F2F /* Info.plist */,
+				A792A03E221E0C9300B61F2F /* WeCodePlaygroundSpec.swift */,
 			);
 			path = WeCodePropertiesSwiftTests;
+			sourceTree = "<group>";
+		};
+		F04C000B85C140B8D7122F5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C351F075470A16C62E48FC01 /* Pods-WeCodePropertiesSwift.debug.xcconfig */,
+				DB04C5F718A5A99408C7864F /* Pods-WeCodePropertiesSwift.release.xcconfig */,
+				F8F8E0CBA2B726C94141CC9C /* Pods-WeCodePropertiesSwiftTests.debug.xcconfig */,
+				010C9EC744F90B18886ACFA4 /* Pods-WeCodePropertiesSwiftTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +147,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A792A032221E07E500B61F2F /* Build configuration list for PBXNativeTarget "WeCodePropertiesSwift" */;
 			buildPhases = (
+				35838479FEAA9EC995956EF2 /* [CP] Check Pods Manifest.lock */,
 				A792A011221E07E400B61F2F /* Sources */,
 				A792A012221E07E400B61F2F /* Frameworks */,
 				A792A013221E07E400B61F2F /* Resources */,
@@ -120,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A792A035221E07E500B61F2F /* Build configuration list for PBXNativeTarget "WeCodePropertiesSwiftTests" */;
 			buildPhases = (
+				C7CF3B470FDC56243FA4FF35 /* [CP] Check Pods Manifest.lock */,
 				A792A025221E07E500B61F2F /* Sources */,
 				A792A026221E07E500B61F2F /* Frameworks */,
 				A792A027221E07E500B61F2F /* Resources */,
+				F69DA5B47C8D701F29413325 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,8 +224,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A792A042221E116E00B61F2F /* README.md in Resources */,
+				A792A03B221E0C1D00B61F2F /* .swiftlint.yml in Resources */,
 				A792A023221E07E500B61F2F /* LaunchScreen.storyboard in Resources */,
 				A792A020221E07E500B61F2F /* Assets.xcassets in Resources */,
+				A792A03D221E0C5D00B61F2F /* .gitignore in Resources */,
+				A792A044221E122C00B61F2F /* .travis.yml in Resources */,
 				A792A01E221E07E400B61F2F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,6 +242,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35838479FEAA9EC995956EF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeCodePropertiesSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7CF3B470FDC56243FA4FF35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeCodePropertiesSwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F69DA5B47C8D701F29413325 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WeCodePropertiesSwiftTests/Pods-WeCodePropertiesSwiftTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftCheck/SwiftCheck.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCheck.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeCodePropertiesSwiftTests/Pods-WeCodePropertiesSwiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A792A011221E07E400B61F2F /* Sources */ = {
@@ -206,7 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A792A02E221E07E500B61F2F /* WeCodePropertiesSwiftTests.swift in Sources */,
+				A792A03F221E0C9300B61F2F /* WeCodePlaygroundSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +478,7 @@
 		};
 		A792A033221E07E500B61F2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C351F075470A16C62E48FC01 /* Pods-WeCodePropertiesSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +497,7 @@
 		};
 		A792A034221E07E500B61F2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB04C5F718A5A99408C7864F /* Pods-WeCodePropertiesSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +516,7 @@
 		};
 		A792A036221E07E500B61F2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8F8E0CBA2B726C94141CC9C /* Pods-WeCodePropertiesSwiftTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,11 +538,13 @@
 		};
 		A792A037221E07E500B61F2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 010C9EC744F90B18886ACFA4 /* Pods-WeCodePropertiesSwiftTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FDND784F5A;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = WeCodePropertiesSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
