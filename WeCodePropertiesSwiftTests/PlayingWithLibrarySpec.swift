@@ -23,14 +23,14 @@ class PlayingWithLibrarySpec: XCTestCase {
 
     func testModifyNumberOfExecutions() {
         var executed = 0
-        let expectedExectutions = 25
+        let expectedExecutions = 25
         property("allow us to modify the number of executions",
-                 arguments: CheckerArguments(maxAllowableSuccessfulTests: expectedExectutions))
+                 arguments: CheckerArguments(maxAllowableSuccessfulTests: expectedExecutions))
             <- (forAll { (_: Int) in
                 executed += 1
                 return true
             })
-        XCTAssertEqual(executed, expectedExectutions)
+        XCTAssertEqual(executed, expectedExecutions)
     }
 
     func testShrinkByMakingATestFail() {
