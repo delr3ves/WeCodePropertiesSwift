@@ -26,12 +26,11 @@ class FibonacciSpec: XCTestCase {
     }
 
     func testFibonacci() {
-        property("ensure the most important property")
-            <- forAll { (number: Int) in
-                // please, find the property and test it.
-                // The implementation of fibonacci is slow so you can check what happen with big numbers ;)
-                true
-        }
+        property("fibonacci should be the sum of the two previous fibonacci",
+                 arguments: CheckerArguments(maxAllowableSuccessfulTests: 5)) //dirty hack until I fix the excution problems
+            <- (forAll(Gen<Int>.fromElements(in: 1...100)) { (number: Int) in
+                return self.fibonacci(number) + self.fibonacci(number + 1) == self.fibonacci(number + 2)
+            }).verbose
     }
 }
 
