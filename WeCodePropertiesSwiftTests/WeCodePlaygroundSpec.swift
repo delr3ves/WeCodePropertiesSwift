@@ -9,6 +9,7 @@
 import Foundation
 import XCTest
 import SwiftCheck
+
 @testable import WeCodePropertiesSwift
 
 class WeCodePlaygroundSpec: XCTestCase {
@@ -18,26 +19,28 @@ class WeCodePlaygroundSpec: XCTestCase {
 
     func testAssociativeProperty() {
         property("should keep the associative property")
-            <- forAll { (_: Int, _: Int, _: Int) in
-                //TODO test the associative property
-                return true
+            <- forAll { (a: Int, b: Int, c: Int) in
+                return self.sum(a: self.sum(a: a, b: b), b: c) == self.sum(a: a, b: self.sum(a: b, b: c))
         }
 
         property("Sum keep the commutative property")
-            <- forAll { (_: Int, _: Int) in
-                //TODO test the commutative property
-                return true
+            <- forAll { (a: Int, b: Int) in
+                return self.sum(a: a, b: b) == self.sum(a: b, b: a)
         }
 
         property("Sum have an identity value")
-            <- forAll { (_: Int) in
-                //TODO test the identity property
-                return true
+            <- forAll { (a: Int) in
+                return self.sum(a: a, b: 0) == a
         }
 
     }
 
     func testSumWithSpecificValues() {
-
+        XCTAssertEqual(sum(a: 1, b: 4), 5)
+        XCTAssertEqual(sum(a: 4, b: 5), 9)
+        XCTAssertEqual(sum(a: 0, b: 0), 0)
+        XCTAssertEqual(sum(a: -1, b: -5), -6)
+        XCTAssertEqual(sum(a: 1, b: -5), -4)
+        XCTAssertEqual(sum(a: -5, b: 1), -4)
     }
 }
