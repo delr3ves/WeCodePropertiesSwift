@@ -12,44 +12,70 @@ import SwiftCheck
 
 @testable import WeCodePropertiesSwift
 
+extension Array where Element: Equatable {
+    func removeAllOccurrences(_ item: Element) -> Array {
+        return self.filter {value in return value != item}
+    }
+    func countAllOccurrences(_ item: Element) -> Int {
+        return self.filter {value in return value == item}.count
+    }
+    func containAll(_ items: [Element]) -> Bool {
+        return items.filter {value in return !self.contains(value) }.count == 0
+    }
+
+}
+
 class CollectionsSpec: XCTestCase {
+
+    private func removeAllOccurrences() {
+
+    }
 
     func testAddition() {
         property("contain one more element after insertion")
-        <- forAll { (_: [Int]) in
-                return true
+            <- forAll { (list: [String], item: String) in
+                let listWithNewItem = list + [item]
+                return listWithNewItem.count == list.count + 1
         }
 
         property("contain the inserted element")
-        <- forAll { (_: [Int]) in
-                return true
+            <- forAll { (list: [String], item: String) in
+                let listWithNewItem = list + [item]
+                return listWithNewItem.contains(item)
         }
     }
 
     func testDeletion() {
         property("have an element less after deletion")
-        <- forAll { (_: [Int]) in
-                return true
+            <- forAll { (list: [Int], item: Int) in
+                let numberOfOccurrencesOfItem = list.countAllOccurrences(item)
+                let listWithNewItem = list + [item]
+                let listWithNoItemsAtAll = listWithNewItem.removeAllOccurrences(item)
+                return listWithNoItemsAtAll.count == list.count - numberOfOccurrencesOfItem
         }
 
         property("not contain the removed element")
-        <- forAll { (_: [String]) in
-                return true
+            <- forAll { (list: [String], item: String) in
+            let listWithNewItem = list + [item]
+            let listWithNoItemsAtAll = listWithNewItem.removeAllOccurrences(item)
+            return !listWithNoItemsAtAll.contains(item)
         }
     }
 
     func testConcatenation() {
-        property("not contain the removed element")
-        <- forAll { (_: [String]) in
-                return true
+        property("contain the items of the two collections after a concatenation")
+            <- forAll { (list1: [String], list2: [String]) in
+                let bigList = list1 + list2
+                return bigList.containAll(list1) && bigList.containAll(list2)
         }
 
     }
 
     func testSetAndDistinct() {
-        property("contain the items of the two collections after a concatenation")
-            <- forAll { (_: [String]) in
-                return true
+        property("set does not contains duplicated elements")
+            <- forAll { (list: [String]) in
+                let asSet = Array(Set(list))
+                return !list.contains {item in return asSet.countAllOccurrences(item) != 1}
         }
     }
 }
