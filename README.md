@@ -79,7 +79,4 @@ git checkout maxibon-kata
 ```
 git checkout maxibon-kata-implemented
 ```
-```
-git checkout maxibon-kata-solved
-```
 
