@@ -20,6 +20,7 @@
 		A792A042221E116E00B61F2F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A792A041221E116E00B61F2F /* README.md */; };
 		A792A044221E122C00B61F2F /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = A792A043221E122C00B61F2F /* .travis.yml */; };
 		A7969BFC221EA7B900DAB92C /* PlayingWithLibrarySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7969BFB221EA7B900DAB92C /* PlayingWithLibrarySpec.swift */; };
+		A7969BFE221ED10A00DAB92C /* FibonacciSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7969BFD221ED10A00DAB92C /* FibonacciSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A792A041221E116E00B61F2F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A792A043221E122C00B61F2F /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		A7969BFB221EA7B900DAB92C /* PlayingWithLibrarySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingWithLibrarySpec.swift; sourceTree = "<group>"; };
+		A7969BFD221ED10A00DAB92C /* FibonacciSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciSpec.swift; sourceTree = "<group>"; };
 		C351F075470A16C62E48FC01 /* Pods-WeCodePropertiesSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeCodePropertiesSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeCodePropertiesSwift/Pods-WeCodePropertiesSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		DB04C5F718A5A99408C7864F /* Pods-WeCodePropertiesSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeCodePropertiesSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeCodePropertiesSwift/Pods-WeCodePropertiesSwift.release.xcconfig"; sourceTree = "<group>"; };
 		F8F8E0CBA2B726C94141CC9C /* Pods-WeCodePropertiesSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeCodePropertiesSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeCodePropertiesSwiftTests/Pods-WeCodePropertiesSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				A792A02F221E07E500B61F2F /* Info.plist */,
 				A792A03E221E0C9300B61F2F /* WeCodePlaygroundSpec.swift */,
 				A7969BFB221EA7B900DAB92C /* PlayingWithLibrarySpec.swift */,
+				A7969BFD221ED10A00DAB92C /* FibonacciSpec.swift */,
 			);
 			path = WeCodePropertiesSwiftTests;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			files = (
 				A792A03F221E0C9300B61F2F /* WeCodePlaygroundSpec.swift in Sources */,
 				A7969BFC221EA7B900DAB92C /* PlayingWithLibrarySpec.swift in Sources */,
+				A7969BFE221ED10A00DAB92C /* FibonacciSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
