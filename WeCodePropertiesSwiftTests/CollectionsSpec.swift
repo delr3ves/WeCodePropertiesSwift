@@ -27,10 +27,6 @@ extension Array where Element: Equatable {
 
 class CollectionsSpec: XCTestCase {
 
-    private func removeAllOccurrences() {
-
-    }
-
     func testAddition() {
         property("contain one more element after insertion")
             <- forAll { (list: [String], item: String) in
