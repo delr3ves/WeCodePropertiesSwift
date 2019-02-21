@@ -25,7 +25,7 @@ git checkout scafolding
 
 ### Sum properties (15'):
 In this branch, you'll find the definition of each test we'll need to implement in order to test a sum. 
-Just find the test in [WeCodePlaygroundSpec.kt](src/test/kotlin/com/emaginalabs/wecodeproperties/WeCodePlaygroundSpec.kt)
+Just find the test in [WeCodePlaygroundSpec.swift](./WeCodePropertiesSwiftTests/WeCodePlaygroundSpec.swift)
 
 ```
 git checkout sum-properties
@@ -37,7 +37,7 @@ git checkout sum-properties-solved
 
 ### Know your tooling (15')
 It's time to know about the internals of the library, so we'll just play with the tool.
-Just find the test in [PlayingWithLibrarySpec.kt](src/test/kotlin/com/emaginalabs/wecodeproperties/PlayingWithLibrarySpec.kt)
+Just find the test in [PlayingWithLibrarySpec.swift](/WeCodePropertiesSwiftTests/PlayingWithLibrarySpec.swift)
 
 ```
 git checkout playing-with-library
@@ -49,7 +49,7 @@ git checkout playing-with-library-solved
 
 ### Fibonacci properties (5'):
 What do you think is the main property fibonacci should keep? 
-Find the test in [FibonacciSpec.kt](src/test/kotlin/com/emaginalabs/wecodeproperties/FibonacciSpec.kt)
+Find the test in [FibonacciSpec.swift](/WeCodePropertiesSwiftTests/FibonacciSpec.swift)
 
 ```
 git checkout fibonacci-properties
@@ -60,7 +60,7 @@ git checkout fibonacci-properties-solved
 
 ### Collection properties (20'):
 Lets find the main properties every collection should keep  
-Find the test in [CollectionsSpec.kt](src/test/kotlin/com/emaginalabs/wecodeproperties/CollectionsSpec.kt)
+Find the test in [CollectionsSpec.swift](/WeCodePropertiesSwiftTests/CollectionsSpec.swift)
 
 ```
 git checkout collection-properties
