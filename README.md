@@ -1,6 +1,6 @@
 # WeCodePropertiesSwift ![Build Status](https://travis-ci.org/delr3ves/WeCodePropertiesSwift.svg?branch=master)
 
-Welcome to the Kotlin implementation of WeCodeFest's property based testing workshop.
+Welcome to the Swift implementation of WeCodeFest's property based testing workshop.
 
 ## Working with the project
 
@@ -17,7 +17,7 @@ To implement this project, we'll use:
 This project contains a few branches in order to help you with irrelevant implementation details that could be time consuming but don't add any value to this Workshop.  
 
 ### Project scafolding:
-Just a simple scafolding of a Kotlin project in order to run the tests 
+Just a simple scafolding of a Swift project in order to run the tests 
 
 ```
 git checkout scafolding
