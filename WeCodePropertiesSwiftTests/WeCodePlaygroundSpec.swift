@@ -13,34 +13,34 @@ import SwiftCheck
 @testable import WeCodePropertiesSwift
 
 class WeCodePlaygroundSpec: XCTestCase {
-    func sum(a: Int, b: Int) -> Int {
-        return a + b
+    func sum(op1: Int, op2: Int) -> Int {
+        return op1 + op2
     }
 
     func testAssociativeProperty() {
         property("should keep the associative property")
-            <- forAll { (a: Int, b: Int, c: Int) in
-                return self.sum(a: self.sum(a: a, b: b), b: c) == self.sum(a: a, b: self.sum(a: b, b: c))
+            <- forAll { (num1: Int, num2: Int, num3: Int) in
+                return self.sum(op1: self.sum(op1: num1, op2: num2), op2: num3)
+                    == self.sum(op1: num1, op2: self.sum(op1: num2, op2: num3))
         }
 
         property("Sum keep the commutative property")
-            <- forAll { (a: Int, b: Int) in
-                return self.sum(a: a, b: b) == self.sum(a: b, b: a)
+            <- forAll { (num1: Int, num2: Int) in
+                return self.sum(op1: num1, op2: num2) == self.sum(op1: num1, op2: num2)
         }
 
         property("Sum have an identity value")
-            <- forAll { (a: Int) in
-                return self.sum(a: a, b: 0) == a
+            <- forAll { (num1: Int) in
+                return self.sum(op1: num1, op2: 0) == num1
         }
-
     }
 
     func testSumWithSpecificValues() {
-        XCTAssertEqual(sum(a: 1, b: 4), 5)
-        XCTAssertEqual(sum(a: 4, b: 5), 9)
-        XCTAssertEqual(sum(a: 0, b: 0), 0)
-        XCTAssertEqual(sum(a: -1, b: -5), -6)
-        XCTAssertEqual(sum(a: 1, b: -5), -4)
-        XCTAssertEqual(sum(a: -5, b: 1), -4)
+        XCTAssertEqual(sum(op1: 1, op2: 4), 5)
+        XCTAssertEqual(sum(op1: 4, op2: 5), 9)
+        XCTAssertEqual(sum(op1: 0, op2: 0), 0)
+        XCTAssertEqual(sum(op1: -1, op2: -5), -6)
+        XCTAssertEqual(sum(op1: 1, op2: -5), -4)
+        XCTAssertEqual(sum(op1: -5, op2: 1), -4)
     }
 }
