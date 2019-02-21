@@ -27,7 +27,7 @@ class FibonacciSpec: XCTestCase {
 
     func testFibonacci() {
         property("ensure the most important property")
-            <- forAll { (number: Int) in
+            <- forAll { (_: Int) in
                 // please, find the property and test it.
                 // The implementation of fibonacci is slow so you can check what happen with big numbers ;)
                 true
