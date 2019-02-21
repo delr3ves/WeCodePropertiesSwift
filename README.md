@@ -69,3 +69,17 @@ git checkout collection-properties
 git checkout collection-properties-solved
 ```
 
+### Kata Maxibon 
+
+The kata definition can be found in the original repo: [https://github.com/Karumi/MaxibonKataIOS](https://github.com/Karumi/MaxibonKataIOS) 
+
+```
+git checkout maxibon-kata
+```
+```
+git checkout maxibon-kata-implemented
+```
+```
+git checkout maxibon-kata-solved
+```
+

@@ -22,6 +22,9 @@
 		A7969BFC221EA7B900DAB92C /* PlayingWithLibrarySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7969BFB221EA7B900DAB92C /* PlayingWithLibrarySpec.swift */; };
 		A7969BFE221ED10A00DAB92C /* FibonacciSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7969BFD221ED10A00DAB92C /* FibonacciSpec.swift */; };
 		A7969C00221EF5CB00DAB92C /* CollectionsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7969BFF221EF5CB00DAB92C /* CollectionsSpec.swift */; };
+		A7969C04221F136E00DAB92C /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7969C03221F136E00DAB92C /* Developer.swift */; };
+		A7969C06221F13A300DAB92C /* KarumiHQs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7969C05221F13A300DAB92C /* KarumiHQs.swift */; };
+		A7969C08221F13C400DAB92C /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7969C07221F13C400DAB92C /* Chat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		A7969BFB221EA7B900DAB92C /* PlayingWithLibrarySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingWithLibrarySpec.swift; sourceTree = "<group>"; };
 		A7969BFD221ED10A00DAB92C /* FibonacciSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciSpec.swift; sourceTree = "<group>"; };
 		A7969BFF221EF5CB00DAB92C /* CollectionsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsSpec.swift; sourceTree = "<group>"; };
+		A7969C03221F136E00DAB92C /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
+		A7969C05221F13A300DAB92C /* KarumiHQs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarumiHQs.swift; sourceTree = "<group>"; };
+		A7969C07221F13C400DAB92C /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		C351F075470A16C62E48FC01 /* Pods-WeCodePropertiesSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeCodePropertiesSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeCodePropertiesSwift/Pods-WeCodePropertiesSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		DB04C5F718A5A99408C7864F /* Pods-WeCodePropertiesSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeCodePropertiesSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeCodePropertiesSwift/Pods-WeCodePropertiesSwift.release.xcconfig"; sourceTree = "<group>"; };
 		F8F8E0CBA2B726C94141CC9C /* Pods-WeCodePropertiesSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeCodePropertiesSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeCodePropertiesSwiftTests/Pods-WeCodePropertiesSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +122,7 @@
 		A792A017221E07E400B61F2F /* WeCodePropertiesSwift */ = {
 			isa = PBXGroup;
 			children = (
+				A7969C02221F134300DAB92C /* Maxibon */,
 				A792A018221E07E400B61F2F /* AppDelegate.swift */,
 				A792A01A221E07E400B61F2F /* ViewController.swift */,
 				A792A01C221E07E400B61F2F /* Main.storyboard */,
@@ -136,6 +143,16 @@
 				A7969BFF221EF5CB00DAB92C /* CollectionsSpec.swift */,
 			);
 			path = WeCodePropertiesSwiftTests;
+			sourceTree = "<group>";
+		};
+		A7969C02221F134300DAB92C /* Maxibon */ = {
+			isa = PBXGroup;
+			children = (
+				A7969C03221F136E00DAB92C /* Developer.swift */,
+				A7969C05221F13A300DAB92C /* KarumiHQs.swift */,
+				A7969C07221F13C400DAB92C /* Chat.swift */,
+			);
+			path = Maxibon;
 			sourceTree = "<group>";
 		};
 		F04C000B85C140B8D7122F5C /* Pods */ = {
@@ -303,8 +320,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7969C04221F136E00DAB92C /* Developer.swift in Sources */,
 				A792A01B221E07E400B61F2F /* ViewController.swift in Sources */,
 				A792A019221E07E400B61F2F /* AppDelegate.swift in Sources */,
+				A7969C08221F13C400DAB92C /* Chat.swift in Sources */,
+				A7969C06221F13A300DAB92C /* KarumiHQs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
