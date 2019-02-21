@@ -12,8 +12,8 @@ import SwiftCheck
 @testable import WeCodePropertiesSwift
 
 class WeCodePlaygroundSpec: XCTestCase {
-    func sum(a: Int, b: Int) -> Int {
-        return a + b
+    func sum(op1: Int, op2: Int) -> Int {
+        return op1 + op2
     }
 
     func testAssociativeProperty() {
