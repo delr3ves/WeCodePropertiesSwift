@@ -12,11 +12,32 @@ import SwiftCheck
 @testable import WeCodePropertiesSwift
 
 class WeCodePlaygroundSpec: XCTestCase {
-    func testAll() {
-        property("True should pass")
-            <- forAll { (_: Int) in
+    func sum(a: Int, b: Int) -> Int {
+        return a + b
+    }
+
+    func testAssociativeProperty() {
+        property("should keep the associative property")
+            <- forAll { (_: Int, _: Int, _: Int) in
+                //TODO test the associative property
                 return true
         }
+
+        property("Sum keep the commutative property")
+            <- forAll { (_: Int, _: Int) in
+                //TODO test the commutative property
+                return true
+        }
+
+        property("Sum have an identity value")
+            <- forAll { (_: Int) in
+                //TODO test the identity property
+                return true
+        }
+
+    }
+
+    func testSumWithSpecificValues() {
 
     }
 }
