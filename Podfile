@@ -5,11 +5,11 @@ target 'WeCodePropertiesSwift' do
   use_frameworks!
 
   # Pods for WeCodePropertiesSwift
+end
 
-  target 'WeCodePropertiesSwiftTests' do
+target 'WeCodePropertiesSwiftTests' do
     inherit! :search_paths
     # Pods for testing
     pod 'SwiftCheck', '~> 0.11.0'
-  end
-
 end
+
