@@ -12,7 +12,7 @@ import SwiftCheck
 @testable import WeCodePropertiesSwift
 
 class WeCodePlaygroundSpec: XCTestCase {
-    func sum(op1: Int, op2: Int) -> Int {
+    func sum(_ op1: Int, _ op2: Int) -> Int {
         return op1 + op2
     }
 
